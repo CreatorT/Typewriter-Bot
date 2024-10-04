@@ -6,7 +6,7 @@ Typewriter-Bot is an automated typing tool designed to interact with the typewri
 
 1. `TypewriterBot.py`: The main bot script for automated typing.
 2. `Interface.py`: A graphical user interface for managing level data.
-3. `typewriteBot.exe`: An executable version of the program for easy use without Python installation.
+3. `typewriterBot.exe`: An executable version of the program for easy use without Python installation.
 4. `level_data.json`: The storage for the user-generated information on the levels.
 5. `logindata.json`: Saves the user name and password
    
