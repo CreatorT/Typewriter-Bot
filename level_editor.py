@@ -64,17 +64,13 @@ def apply_functions():
     else:
         messagebox.showerror("Missing functions", "Please enter valid functions for Speed and Error Rate.")
 
-# Create the main window
 root = tk.Tk()
 root.title("Level Input with Functions")
 
-# Load existing data from JSON file
 levels_data = load_data()
 
-# Variables for level selection (manual input)
 level_var = tk.StringVar(value="Level 1")
 
-# Dropdown for selecting level
 level_label = tk.Label(root, text="Select Level (Manual Entry):")
 level_label.pack()
 
@@ -88,57 +84,47 @@ speed_label.pack()
 speed_entry = tk.Entry(root)
 speed_entry.pack()
 
-# Manual input for Error Rate
 error_rate_label = tk.Label(root, text="Error Rate:")
 error_rate_label.pack()
 
 error_rate_entry = tk.Entry(root)
 error_rate_entry.pack()
 
-# Button to submit manual input
 submit_button = tk.Button(root, text="Submit Manual Input", command=save_manual_input)
 submit_button.pack()
 
-# Section for function input
 function_label = tk.Label(root, text="Apply Function to Levels:")
 function_label.pack()
 
-# Dropdown for starting level
 start_level_var = tk.StringVar(value="1")
 start_level_label = tk.Label(root, text="Select Start Level:")
 start_level_label.pack()
 start_level_dropdown = tk.OptionMenu(root, start_level_var, *[str(i) for i in range(1, 101)])
 start_level_dropdown.pack()
 
-# Dropdown for ending level
 end_level_var = tk.StringVar(value="100")
 end_level_label = tk.Label(root, text="Select End Level:")
 end_level_label.pack()
 end_level_dropdown = tk.OptionMenu(root, end_level_var, *[str(i) for i in range(1, 101)])
 end_level_dropdown.pack()
 
-# Input for Speed function
 speed_function_label = tk.Label(root, text="Speed Function (use 'x' for level):")
 speed_function_label.pack()
 speed_function_entry = tk.Entry(root)
 speed_function_entry.insert(0, "5 + 0.1 * x")  # Default function example
 speed_function_entry.pack()
 
-# Input for Error Rate function
 error_rate_function_label = tk.Label(root, text="Error Rate Function (use 'x' for level):")
 error_rate_function_label.pack()
 error_rate_function_entry = tk.Entry(root)
 error_rate_function_entry.insert(0, "0.5 - 0.01 * x")  # Default function example
 error_rate_function_entry.pack()
 
-# Button to apply the functions
 apply_functions_button = tk.Button(root, text="Apply Functions", command=apply_functions)
 apply_functions_button.pack()
 
-# Start the GUI event loop
 root.mainloop()
 
-# When the window is closed, data is already saved in the JSON file
 print("Collected Data (stored in JSON):")
 for level, data in levels_data.items():
     print(f"{level}: {data}")
