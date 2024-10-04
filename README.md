@@ -100,5 +100,5 @@ This bot is for educational purposes only. Be sure to comply with typewriter.at'
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/yourusername/typewriterBot/issues) if you want to contribute.
+Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/CreatorT/Typewriter-Bot/issues) if you want to contribute.
 
