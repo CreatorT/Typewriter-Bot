@@ -67,7 +67,6 @@ For the executable:
 ### For executable:
 
 1. Simply download the `TypewriterBot.exe` file.
-2. Create a `logindata.json` file or copy the existent `logindata.json` in the same directory as the executable with your login credentials (as shown above).
 
 ## Usage
 
@@ -101,5 +100,5 @@ This bot is for educational purposes only. Be sure to comply with typewriter.at'
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/yourusername/typewriteBot/issues) if you want to contribute.
+Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/yourusername/typewriterBot/issues) if you want to contribute.
 
