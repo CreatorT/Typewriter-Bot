@@ -1,4 +1,5 @@
 #Typewriter-BOT
+
 TypewriterBOT is an automated typing tool designed to interact with the typewriter.at platform. It includes a bot for automated typing and a UI for managing typing speed and error rates across different levels.
 
 ##How to use
