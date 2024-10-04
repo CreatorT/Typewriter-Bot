@@ -1,6 +1,6 @@
-# typewriteBot
+# Typewriter-Bot
 
-typewriteBot is an automated typing tool designed to interact with the typewriter.at platform. It includes a bot for automated typing, a UI for managing typing speed and error rates across different levels, and an executable for easy access.
+Typewriter-Bot is an automated typing tool designed to interact with the typewriter.at platform. It includes a bot for automated typing, a UI for managing typing speed and error rates across different levels, and an executable for easy access.
 
 ## Components
 
