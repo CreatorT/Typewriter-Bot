@@ -4,13 +4,15 @@ Typewriter-Bot is an automated typing tool designed to interact with the typewri
 
 ## Components
 
-1. `pywriterPro.py`: The main bot script for automated typing.
-2. `UI.py`: A graphical user interface for managing level data.
+1. `TypewriterBot.py`: The main bot script for automated typing.
+2. `Interface.py`: A graphical user interface for managing level data.
 3. `typewriteBot.exe`: An executable version of the program for easy use without Python installation.
-
+4. `level_data.json`: The storage for the user-generated information on the levels.
+5. `logindata.json`: Saves the user name and password
+   
 ## Features
 
-### pywriterPro.py
+### TypewriterBot.py
 
 - Automated login to typewriter.at
 - Simulates human-like typing with customizable speed and error rates
@@ -18,14 +20,14 @@ Typewriter-Bot is an automated typing tool designed to interact with the typewri
 - Handles transitions between lessons
 - Uses Selenium for web automation
 
-### UI.py
+### Interface.py
 
 - Graphical interface for managing level data
 - Allows manual input of speed and error rates for each level
 - Supports applying mathematical functions to generate speed and error rates across multiple levels
 - Saves and loads level data from a JSON file
 
-### typewriteBot.exe
+### TypewriterBot.exe
 
 - Standalone executable version of the program
 - Includes all functionality of the Python scripts
@@ -54,7 +56,7 @@ For the executable:
 
 2. Ensure you have Google Chrome installed.
 
-3. Create a `logindata.json` file in the same directory as the scripts with your typewriter.at login credentials:
+3. Create a `logindata.json` file or copy the existent `logindata.json` in the same directory as the scripts with your typewriter.at login credentials:
    ```json
    {
      "username": "your_username",
@@ -64,8 +66,8 @@ For the executable:
 
 ### For executable:
 
-1. Simply download the `typewriteBot.exe` file.
-2. Create a `logindata.json` file in the same directory as the executable with your login credentials (as shown above).
+1. Simply download the `TypewriterBot.exe` file.
+2. Create a `logindata.json` file or copy the existent `logindata.json` in the same directory as the executable with your login credentials (as shown above).
 
 ## Usage
 
@@ -73,24 +75,24 @@ For the executable:
 
 1. Run the UI to set up level data:
    ```
-   python UI.py
+   python Interface.py
    ```
    Use this interface to set speed and error rates for different levels, or apply functions to generate these values across multiple levels.
 
 2. Run the bot:
    ```
-   python pywriterPro.py
+   python TypewriterBot.py
    ```
    The bot will log in to typewriter.at and start typing automatically based on the configured settings.
 
 ### Executable:
 
-1. Double-click on `typewriteBot.exe` to run the program.
+1. Double-click on `typewriterBot.exe` to run the program.
 2. Follow the on-screen instructions to configure settings and start the bot.
 
 ## Customization
 
-- Adjust the `speed` and `error_rate_percent` variables in `pywriterPro.py` to fine-tune the bot's behavior.
+- Adjust the `speed` and `error_rate_percent` variables in `typewriterBot.py` to fine-tune the bot's behavior.
 - Use the UI to create custom speed and error rate profiles for different levels.
 
 ## Disclaimer
